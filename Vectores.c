@@ -200,7 +200,6 @@ double v1[]={
 0.02742
 };
 
-
 int longitud=sizeof(v1)/sizeof(v1[0]);
 
 printf("el tamaño del vector es: %d",longitud);
