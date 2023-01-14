@@ -204,4 +204,37 @@ int longitud=sizeof(v1)/sizeof(v1[0]);
 
 printf("el tamaño del vector es: %d",longitud);
 
+NumeroMenor(v1,longitud);
+NumeroMayor(v1,longitud);
+
+}
+
+void NumeroMenor (double v1[],int tam){
+    int i ,lugar;
+    double NumeroMenor=v1[0];
+    for (i = 0; i < tam ; i++)
+    {
+        if (v1 [i]<NumeroMenor){
+            NumeroMenor=v1[1];
+            lugar=i;
+    }
+    
+}
+printf("el numero menor es:%lf y se encuentra en la posicion:%d\n\n\n" ,NumeroMenor,lugar);
+ }
+
+
+
+void NumeroMayor (double v1[],int tam){
+    int i , lugar;
+    double NumeroMayor=v1[0];
+      for (i = 0; i < tam ; i++){
+        if (v1 [i]>NumeroMenor){
+            NumeroMenor=v1[i];
+            lugar=i;
+    }
+}
+
+
+printf("el numero mayor es:%f y se encuentra en la posicion :%d"\n\n\n , NumeroMayor,lugar);
 }
